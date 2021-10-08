@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangi Takımlısın?</title>
+</head>
+<style>
+    .btn{
+        border: 2px solid rgb(30,30,30);
+        border-radius: 5px;
+        background-color: rgb(200,200,200);
+        color: rgb(75,50,25);
+        margin:5px;
+        padding: 3px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+    }
+    body{
+        margin: 30px;
+    }
+</style>
+<body>
+<h2>Takımını Seç</h2>
+
+<p>Hangi Takımlısın?</p>
+<div class="btn" id="btn0"  onclick="showResult()" onmouseover="changeGS('btn1')"></div>
+<div class="btn" id="btn1" onclick="showResult()" onmouseover="changeGS('btn0')"></div>
+
+<script>
+    let gs;
+
+    changeGS = (id) => {
+        if(id==gs){
+            return;
+        }
+        gs = id;
+        let other;
+
+        if(id==="btn0"){
+            other = "btn1"
+        }else {
+            other = "btn0";
+        }
+
+        const divGS = document.getElementById(other);
+        const divOther = document.getElementById(gs);
+        divGS.innerHTML = "Galatasaray";
+        divOther.innerHTML = "Diğer";
+    }
+    showResult = () => {
+        alert("Tebrik ve teşekkür ederiz :)")
+    }
+    changeGS("btn1")
+</script>
+</body>
+</html>
