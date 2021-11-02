@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kediyi Bul</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<h2>Kedi Bulmaca</h2>
+
+<p>
+    Bu oyunda 3 kapalı kart içindeki kediyi bulman gerekmektedir. İlk tercihte Kedi kartını bulamaz isen 2. seçim hakkı tanınacaktır.
+</p>
+
+<img id="img0" class="kart" src="img/ArkaKapak.png" onclick="Kedi.kartSec(0)">
+<img id="img1" class="kart" src="img/ArkaKapak.png" onclick="Kedi.kartSec(1)">
+<img id="img2" class="kart" src="img/ArkaKapak.png" onclick="Kedi.kartSec(2)">
+
+<div class="mesaj">
+    <p id="ilkAlanId">Kedi kartını bulmak için kartın üzerine tıklamalısın.</p>
+    <p id="kazandiId" style="display: none">Kazandın!!! Tebrik ederiz :)
+        Yeni bir oyun oynamak istersen <span onclick="Kedi.yeniOyun()" class="link">buraya</span> tıklayabilirsin.
+    </p>
+    <p id="yenildiId" style="display: none">Kaybettin :(
+        Yeni bir oyun oynamak istersen <span onclick="Kedi.yeniOyun()" class="link">buraya</span> tıklayabilirsin.
+    </p>
+</div>
+<script src="bundle.js"></script>
+
+<script>
+    Kedi.yeniOyun();
+</script>
+
+</body>
+</html>
