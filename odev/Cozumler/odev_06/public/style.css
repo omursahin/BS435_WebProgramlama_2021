@@ -1,0 +1,58 @@
+html, body {
+    margin: 0px;
+    background-color: rgb(243, 239, 231);
+    color: rgb(71, 53, 25);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+.kart {
+    margin: 20px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.link{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.welcome-text {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+.action {
+    padding: 1rem 0;
+}
+
+.play {
+    background-color: #ebe9e4;
+    color: #000000;
+    padding: 1rem;
+    border: 1px solid #787774;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.play:focus,.play:hover{
+    background-color: #2d1ed6;
+    color: #ebe9e4;
+
+}
+.game-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.new-game-button{
+    align-self: center;
+}
